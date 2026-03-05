@@ -10,24 +10,27 @@ body::selection{
     background-color: rgb(200, 200, 200);
     justify-content: space-evenly;
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 
 .header {
+    position: sticky;
+    top: 20px;
     flex-basis: 550px;
+    height: max-content;
 }
 
-.container-hero{
+.container-hero {
     background-color: aqua;
     padding: 20px;
     /*flex-basis: 500px;*/
 }
 
-#name{
+#name {
     font-size: 50px;
 }
 
-#beschreibung{
+#beschreibung {
     font-size: 150%;
 }
 
@@ -52,4 +55,5 @@ body::selection{
 
 .container-ps {
     background-color: brown;
+    z-index: 2;
 }
