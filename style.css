@@ -1,1 +1,55 @@
+:root {
+  font-family: Inter, sans-serif;
+}
 
+body::selection{
+    background-color: green;
+}
+.main{
+    display: flex;
+    background-color: rgb(200, 200, 200);
+    justify-content: space-evenly;
+    position: relative;
+    top: 100px;
+}
+
+.header {
+    flex-basis: 550px;
+}
+
+.container-hero{
+    background-color: aqua;
+    padding: 20px;
+    /*flex-basis: 500px;*/
+}
+
+#name{
+    font-size: 50px;
+}
+
+#beschreibung{
+    font-size: 150%;
+}
+
+.box {
+    border-radius: 10px;
+    margin: 15px 20px;
+    padding: 15px 20px;
+    background-color: bisque;
+    flex-basis: 500px;
+}
+
+.boxes {
+    flex-basis: 500px;
+}
+
+@media(max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+.container-ps {
+    background-color: brown;
+}
