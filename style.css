@@ -2,8 +2,14 @@
   font-family: Inter, sans-serif;
 }
 
+body {
+    background-color: #051326;
+    color: #c7d7ed;
+
+}
+
 body::selection{
-    background-color: green;
+    /*background-color: green;*/
 }
 .main{
     display: flex;
@@ -18,8 +24,20 @@ body::selection{
     top: 12%;
     flex-basis: 600px;
     height: fit-content;
-
 }
+
+/*
+Source - https://stackoverflow.com/q/10632468
+Posted by Roland, modified by community. See post 'Timeline' for change history
+Retrieved 2026-03-09, License - CC BY-SA 3.0
+*/
+
+a[href^="mailto:"]
+
+{ 
+  color: #c7d7ed;
+}
+
 
 .container-hero {
     /*background-color: aqua;*/
@@ -47,20 +65,35 @@ body::selection{
     margin: 15px 20px;
     padding: 15px 20px;
     /*background-color: bisque;*/
-    flex-basis: 500px;
+    /*flex-basis: 500px;*/
+    transition-duration: 0.5s;
+}
+
+.box:hover {
+    background-color: #0a2140;
 }
 
 .boxes {
-    flex-basis: 600px;
+    flex-basis: 650px;
 }
 
 .box-text {
-    width: 70%;
+    width: 80%;
+}
+
+.titel {
+    margin-left: 40px;
 }
 
 .year {
-    width: 30%;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 5%;
     /*background-color: aqua;*/
+}
+
+.weitere {
+    margin-block-end:1lh;
 }
 
 
@@ -83,4 +116,3 @@ body::selection{
     background-color: brown;
     z-index: 2;
 }
-
